@@ -1,0 +1,39 @@
+@@if (tile === true) {
+<a class="person tile__item" href="#">
+}
+@@if (tile !== true && link === true ) {
+<a class="person" href="#">
+}
+@@if (tile !== true && link !== true ) {
+<div class="person">
+}	
+	<div class="person__img-bg">
+		<div class="person__img-cont">
+			@@if (empty === true) {
+				<img src="./img/player__empty.png" alt="" class="person__img" />
+			}
+			@@if (empty === false) {
+				<img src="./media/person.jpg" alt="" class="person__img" />
+			}
+		</div>
+	</div>
+	<div class="person__inner">
+		@@if (name !== false) {
+			<div class="person__name">@@name</div>
+		}
+		@@if (text !== false) {
+			<div class="person__text">@@text</div>
+		}
+		@@if (num !== false) {
+			<div class="person__num">@@num</div>
+		}
+	</div>
+@@if (tile === true) {
+</a>
+}	
+@@if (tile !== true && link === true ) {
+</a>
+}
+@@if (tile !== true && link !== true ) {
+</div>
+}	

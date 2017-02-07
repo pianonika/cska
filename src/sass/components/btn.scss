@@ -1,0 +1,70 @@
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 24px;
+	color: $brandColorBlue;
+	font-family: $fontBrand;
+	border:1px solid $borderColor;
+	padding: 7px 15px 9px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	transition: 0.3s all;
+	
+
+	&:hover{
+		color: $fontColor3;
+		background: $brandColorRed;
+		border-color: $brandColorRed;
+	}
+	
+	.icon-arr{
+		border: 7px solid transparent;
+	    border-left: 7px solid $iconColor13;
+	    display: inline-block;
+	    width: 0;
+	    height: 0;
+	    vertical-align: baseline;
+	    margin-left: 4px;
+		margin-right: -7px;
+	}
+	
+	&__red{
+		border:1px solid $brandColorRed;
+		background: $brandColorRed;
+		color: $fontColor3;
+		
+		&:hover{
+			border:1px solid $bgColor;
+			background: $bgColor;
+			color: $brandColorRed;
+			
+			.icon-arr{
+		    	border-left: 7px solid $brandColorRed;
+		    }
+		}
+		
+		.icon-arr{
+	    	border-left: 7px solid $iconColor5;
+	    }
+	}
+	
+	
+}
+
+.blue, .black, .bg{
+	.btn{
+		color: $fontColor3;
+		border:1px solid $borderColor9;
+		
+		&:hover{
+			border-color: $brandColorRed;
+		}
+	
+		.icon-arr{
+			border-left: 7px solid $iconColor5;
+	    }
+	}
+}

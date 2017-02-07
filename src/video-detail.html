@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('./html_include/head.html', { "title" : "Поиск" })
+</head>
+<body>
+	
+
+    @@include('./html_include/page-header.html')
+    
+    
+    <div class="page__content">
+    
+       <div class="container-fluid wrapper">
+       
+	       <div class="row">
+		       <div class="col-md-12">
+		       
+				   @@include('./html_include/breadcrumbs.html')
+		       </div>
+			   <div class="col-md-8 col-md-offset-2">
+			       <div class="article">
+				       <div class="article__top text-center">
+					        <div class="article__date">@@include('./html_include/icon.html', { "class": "tile__item-content-icon", "width" : "11", "height" : "11", "name" : "icon-clock" }) 22 декабря, 11:30</div>
+				       </div>
+				      
+				       
+				       <h1 class="text-center">интервью с Бадом хеллоуеем: 
+«я понял, что игры против ска — особенные»</h1>
+				       
+				       <div class="article__src">Источник: <a href="#">Пресс-Служба ЦСКА</a></div>
+				       
+				       @@include('./html_include/page-video.html', {"src":"site" , "comment": false} )
+				       
+				       <p>
+					       Можно смотреть на эту игру как угодно. Я недавно в команде, но вкус дерби уже почувствал, понял, что игры против СКА стоят особняком. Но в тоже время, это всего лишь предсезонная игра, мы в первую очередь стараемся работать над своей игрой, а не доказывать что-либо кому-либо.
+				       </p>
+				       
+			       </div>
+
+		       		
+		       </div>
+		       <div class="clearfix"></div>
+	       </div>
+		   
+		   @@include('./html_include/share.html', {"short": false, "back": true } )
+
+	       
+       </div>
+    </div>
+ 
+    @@include('./html_include/page-footer.html', {"banner":3})
+    
+    @@include('./html_include/scripts.html')
+</body>
+</html>

@@ -1,0 +1,59 @@
+<div class="pagenav__outer">
+	
+	@@if (rss === 'yes') {
+	<div class="pull-right rss-outer">
+		<div class="rss">
+			
+			<span class="rss-link">RSS</span>
+			
+			<div class="rss__bl rss__bl__inline-block">
+				<a class="rss-icon-cont" href="#">
+					@@include('./icon.html', { "class": "rss-icon", "width" : "14", "height" : "16", "name" : "icon-rss" }) 
+				</a>
+			</div>
+		</div>
+	</div>
+	}
+	
+	@@if (back === 'yes') {
+
+		<div class="pagenav__back">
+		
+			<div class="pagenav__item pagenav__item__inline-block">
+				<a class="pagenav__back-icon-cont" href="#">
+					@@include('./icon.html', { "class": "pagenav__back-icon", "width" : "14", "height" : "16", "name" : "icon-back" }) 
+				</a>
+			</div>
+			<span class="pagenav__back-link">назад к альбомам</span>
+		</div>
+	}
+	
+	<div class="pagenav__center">
+		<div class="pagenav">
+			<div class="pagenav__item">
+				<div class="pagenav__arrow pagenav__arrow__disabled pagenav__arrow__left"></div>
+			</div>
+			<div class="pagenav__item">
+				<div class="pagenav__link pagenav__link__current">1</div>
+			</div>
+			<div class="pagenav__item">
+				<a href="#" class="pagenav__link">2</a>
+			</div>
+			<div class="pagenav__item">
+				<a href="#" class="pagenav__link">3</a>
+			</div>
+			<div class="pagenav__item">
+				<a href="#" class="pagenav__link">4</a>
+			</div>
+			<div class="pagenav__item">
+				<a href="#" class="pagenav__link">5</a>
+			</div>
+			<div class="pagenav__item">
+				<a href="#" class="pagenav__arrow pagenav__arrow__right"></a>
+			</div>
+		</div>
+	</div>
+	
+	
+		
+</div>

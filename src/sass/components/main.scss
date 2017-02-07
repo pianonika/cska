@@ -1,0 +1,40 @@
+html{
+	&.height100{
+		height: 100%;		
+	}
+}
+
+body{
+	font-family: $fontReg;
+	color: $fontColor1;
+	font-size: 17px;
+	line-height: 30px;
+	background: $bgColor4 url('../img/bg-pattern.png');
+	
+	&.black{
+		background: $bgColor3;
+	}
+	&.bg{
+		background: $bgColor6 url('../img/page404.png') no-repeat center;
+		background-size: cover;
+	}
+	&.height100{
+		height: 100%;		
+	}
+}
+
+.wrapper{
+	max-width: 1200px;
+	box-sizing: border-box;
+}
+
+svg{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.page{
+	&__content{
+		padding: 40px 0 69px;
+	}
+}

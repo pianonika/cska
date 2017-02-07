@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('./html_include/head.html', { "title" : "Поиск" })
+</head>
+<body>
+	
+    @@include('./html_include/page-header.html')
+    
+    
+    <div class="page__content">
+    
+       <div class="container-fluid wrapper">
+       
+	       <div class="row">
+		       <div class="col-md-12">
+			       
+			       @@include('./html_include/breadcrumbs.html')
+
+				   <h1 class="text-center">Архив закупок</h1>
+				   
+				   @@include('./html_include/filter.html', {"align":"center","stage":false,"season":false, "month":true, "year":true, "count": true, "calendar": false})
+		       </div>
+	       </div>    		
+		   <div class="row">
+		       <div class="col-md-12">   
+
+				   <table class="vertical-align">
+					   <thead>
+						   <tr>
+							   <th>
+								   №
+							   </th>
+							   <th>
+								   Информация о проведенных закупках
+							   </th>
+							   <th>
+								   Дата  публикации
+							   </th>
+							   <th>
+								   Способ закупки
+							   </th>
+							   <th>
+								   Срок подачи заявок
+							   </th>
+							   <th>
+								   Протокол
+							   </th>
+						   </tr>
+					   </thead>
+					   <tbody>
+						   <tr>
+							   <td>
+								   01/ЕП
+							   </td>
+							   <td>
+								   <a href="#">Закупка способом у единственного поставщика на право заключения Договора оказания услуг по развитию и администрированию страниц ООО ПХК ЦСКА в социальных сетях в сети Интернет</a>
+							   </td>
+							   <td>
+								   27.01.2015
+							   </td>
+							   <td>
+								   Тендер
+							   </td>
+							   <td>
+								   10.02.2015
+							   </td>
+							   
+							   <td>
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+							   </td>
+						   </tr>
+						   <tr>
+							   <td>
+								   01/ЕП
+							   </td>
+							   <td>
+								   <a href="#">Закупка способом у единственного поставщика на право заключения Договора оказания услуг по развитию и администрированию страниц ООО ПХК ЦСКА в социальных сетях в сети Интернет</a>
+							   </td>
+							   <td>
+								   27.01.2015
+							   </td>
+							   <td>
+								   Тендер
+							   </td>
+							   <td>
+								   10.02.2015
+							   </td>
+							   <td>
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол", "size": "204 КБ" })
+							   </td>
+						   </tr>
+						   <tr>
+							   <td>
+								   01/ЕП
+							   </td>
+							   <td>
+								   <a href="#">Закупка способом у единственного поставщика на право заключения Договора оказания услуг по развитию и администрированию страниц ООО ПХК ЦСКА в социальных сетях в сети Интернет</a>
+							   </td>
+							   <td>
+								   27.01.2015
+							   </td>
+							   <td>
+								   Тендер
+							   </td>
+							   <td>
+								   10.02.2015
+							   </td>
+							   <td>
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+							   </td>
+						   </tr>
+						   <tr>
+							   <td>
+								   01/ЕП
+							   </td>
+							   <td>
+								   <a href="#">Закупка способом у единственного поставщика на право заключения Договора оказания услуг по развитию и администрированию страниц ООО ПХК ЦСКА в социальных сетях в сети Интернет</a>
+							   </td>
+							   <td>
+								   27.01.2015
+							   </td>
+							   <td>
+								   Тендер
+							   </td>
+							   <td>
+								   10.02.2015
+							   </td>
+							   <td>
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+							   </td>
+						   </tr>
+						   <tr>
+							   <td>
+								   01/ЕП
+							   </td>
+							   <td>
+								   <a href="#">Закупка способом у единственного поставщика на право заключения Договора оказания услуг по развитию и администрированию страниц ООО ПХК ЦСКА в социальных сетях в сети Интернет</a>
+							   </td>
+							   <td>
+								   27.01.2015
+							   </td>
+							   <td>
+								   Тендер
+							   </td>
+							   <td>
+								   10.02.2015
+							   </td>
+							   <td>
+								    @@include('./html_include/file.html', { "exp": "doc", "name":"Протокол подведения  итогов", "size": "204 КБ" })
+							   </td>
+						   </tr>
+					   </tbody>
+				   </table>
+		        	
+		        	
+		           @@include('./html_include/pagenav.html', {"back":"no", "rss": "no"})	
+		       </div>
+		       <div class="clearfix"></div>
+	        </div>
+	       
+	       
+       </div>
+    </div>
+ 
+    @@include('./html_include/page-footer.html', {"banner":3})
+    
+    @@include('./html_include/scripts.html')
+</body>
+</html>

@@ -1,0 +1,81 @@
+.rss{
+	display: block;	
+	position: absolute;
+	text-decoration: none;
+	right: 0;
+	white-space: nowrap;
+		
+	&-outer{
+		position: relative;
+	}
+
+	
+	&-icon{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		margin: auto;
+		fill: $iconColor9;
+		
+		&-cont{
+		    line-height: 22px;
+		    padding: 22px 20px 16px 20px;
+		    min-width: 60px;
+		    box-sizing: border-box;
+		    display: block;
+		    min-height: 60px;
+		    
+		    &:hover{
+		    	.rss-icon{
+		    		fill: $iconColor5;
+		    	}
+		    
+		    	&:after{
+		    		position: absolute;
+		    		left: -1px;
+		    		right: -1px;
+		    		top: -1px;
+		    		bottom: -1px;
+		    		background: $brandColorBlue;
+		    		content: '';
+		    		z-index: -100;
+		    	}
+		    }			
+		}
+	}
+	&-link{
+	    font-family: $fontBlack;
+	    font-size: 12px;
+	    line-height: 20px;
+	    margin: 21px 0 19px 13px;
+	    color: $fontColor8;
+	    text-transform: uppercase;
+	    display: inline-block;
+	    vertical-align: top;
+	    letter-spacing: 1px;
+	    
+	    &:first-child{
+	        margin: 21px 13px 19px 0;
+	    }
+	    &:last-child{
+	       margin: 21px 0 19px 13px;
+	    }
+	}
+	
+	&__bl{
+		display: table-cell;
+		vertical-align: top;
+		border: 1px solid $borderColor; 
+		position: relative;
+		text-align: center;
+	
+		&__inline-block{
+			display: inline-block;
+			vertical-align: top;
+			max-width: 60px;
+			height: 60px;
+		}
+	}
+}

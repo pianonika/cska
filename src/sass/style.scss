@@ -1,0 +1,56 @@
+﻿// Core variables and mixins
+$node_modules_path: "../../node_modules/";
+
+@import "variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+
+//bootstrap
+@import "bootstrap/grid";
+@import "bootstrap/type";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+
+//components
+@import "components/fonts";
+
+@import "components/main";
+@import "components/page-header";
+@import "components/page-footer";
+@import "components/main-menu";
+@import "components/social";
+@import "components/breadcrumbs";
+@import "components/slick";
+@import "components/page-pic";
+@import "components/page-video";
+@import "components/footnote";
+@import "components/table";
+@import "components/share";
+@import "components/footer-menu";
+@import "components/search-form";
+@import "components/search-list";
+@import "components/pagenav";
+@import "components/tile";
+@import "components/tabs";
+@import "components/article";
+@import "components/magneficpopup";
+@import "components/person";
+@import "components/media";
+@import "components/filter";
+@import "components/formstyler";
+@import "components/video-player";
+@import "components/banner";
+@import "components/file";
+@import "components/docs-list";
+@import "components/btn";
+@import "components/v-al";
+@import "components/page404";
+@import "components/video-bg";
+@import "components/jquery-ui";
+@import "components/rss";
+@import "components/path-scheme";

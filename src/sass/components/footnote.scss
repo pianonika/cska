@@ -1,0 +1,14 @@
+.footnote{
+    font-size: 16px;
+    line-height: 30px;
+    color: $fontColor4;
+    
+	&:before{
+		width: 77px;
+		height: 2px;
+		background: $brandColorRed;
+		margin: 8px 0 21px;
+		content: '';
+		display: block;
+	}
+}

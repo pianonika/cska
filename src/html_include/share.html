@@ -1,0 +1,70 @@
+@@if( short === false ) {
+<div class="share__outer">
+    <div class="row">
+    	
+    	@@if (back === true) {
+    		<div class="col-md-2">
+	
+			     <div class="pagenav__back">
+					<div class="pagenav__item pagenav__item__inline-block">
+						<a class="pagenav__back-icon-cont" href="#">
+							@@include('./icon.html', { "class": "pagenav__back-icon", "width" : "14", "height" : "16", "name" : "icon-back" }) 
+						</a>
+					</div>
+				</div>
+		
+			 </div>
+			  
+			 <div class="col-md-8">
+    	}
+    	@@if (back !== true) {
+        	<div class="col-md-8 col-md-offset-2">
+		}
+		
+			<div class="share">
+				<a href="#" class="share__block share__block__inst">
+				    @@include('icon.html', { "class": "share__icon", "width" : "20", "height" : "20", "name" : "icon-inst" })
+				</a>
+				<a href="#" class="share__block share__block__tw">
+				    @@include('icon.html', { "class": "share__icon", "width" : "20", "height" : "20", "name" : "icon-tw" })
+				</a>
+				<a href="#" class="share__block share__block__yt">
+				    @@include('icon.html', { "class": "share__icon", "width" : "20", "height" : "20", "name" : "icon-yt" })
+				</a>
+				<a href="#" class="share__block share__block__fb">
+				    @@include('icon.html', { "class": "share__icon", "width" : "9", "height" : "19", "name" : "icon-fb" })
+				</a>
+				<a href="#" class="share__block share__block__vk">
+				    @@include('icon.html', { "class": "share__icon", "width" : "24", "height" : "18", "name" : "icon-vk" })
+				</a>
+				
+				
+					<div class="h6 share__title">1 457 человек поделисись c друзьями</div>
+				
+				
+			</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+}
+@@if( short === true  ) {
+	<div class="share share2">
+	    <a href="#" class="share__block share2__block share__block__inst">
+	        @@include('icon.html', { "class": "share__icon share2__icon", "width" : "20", "height" : "20", "name" : "icon-inst" })
+	    </a>
+	    <a href="#" class="share__block share2__block share__block__tw">
+	        @@include('icon.html', { "class": "share__icon share2__icon", "width" : "20", "height" : "20", "name" : "icon-tw" })
+	    </a>
+	    <a href="#" class="share__block share2__block share__block__yt">
+	        @@include('icon.html', { "class": "share__icon share2__icon", "width" : "20", "height" : "20", "name" : "icon-yt" })
+	    </a>
+	    <a href="#" class="share__block share2__block share__block__fb">
+	        @@include('icon.html', { "class": "share__icon share2__icon", "width" : "9", "height" : "19", "name" : "icon-fb" })
+	    </a>
+	    <a href="#" class="share__block share2__block share__block__vk">
+	        @@include('icon.html', { "class": "share__icon share2__icon", "width" : "24", "height" : "18", "name" : "icon-vk" })
+	    </a> 
+	    <div class="clearfix"></div>
+	</div>
+}

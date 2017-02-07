@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('./html_include/head.html', { "title" : "Внутренная" })
+</head>
+<body>
+	
+
+    @@include('./html_include/page-header.html')
+    
+    
+    <div class="page__content">
+    
+       <div class="container-fluid wrapper">
+       
+	       <div class="row">
+		       <div class="col-md-10 col-md-offset-1">
+			       
+			       @@include('./html_include/breadcrumbs.html')
+
+				   <h1 class="text-center">Ледовая арена ЦСКА </h1>
+				   
+				   <p class="text-center">
+			      	 <strong>Ледовый дворец спорта ЦСКА (ЛДС) построен в 1991 г.  Спортивный комплекс предназначен для организации учебно-тренировочного процесса и проведения соревнований (чемпионатов страны, международных турниров, включая чемпионаты мира) по хоккею и фигурному катанию. Оборудован пресс-центр, рассчитанный на 50 мест.</strong>
+				   </p>
+		       </div>
+		       <div class="clearfix"></div>
+	       </div>
+	       
+	       <div class="row">
+		       <div class="col-md-8 col-md-offset-2">
+		       
+			       <p>Комплекс ежедневно используется для тренировочных занятий хоккейной команды ЦСКА, а также спортивных детско-юношеских школ олимпийского резерва (СДЮШОР) ЦСКА по хоккею и фигурному катанию на коньках.</p>
+
+				   <p>На площадке ледового дворца проходят все домашние матчи ХК ЦСКА. Трибуны спортивной ледовой арены рассчитаны на 5 600 мест. Размеры основного игрового поля ледовой арены – 60 х 31 метр.</p>
+				   
+		       </div>
+		       <div class="clearfix"></div>
+	       </div>
+	       
+	       <div class="row">
+		       <div class="col-md-12">
+				   @@include('./html_include/slider.html', {"comment": false})
+			   </div>
+			   <div class="clearfix"></div>
+	       </div>
+
+	       <table class="simple">
+			    <tr>
+			 	   <td>
+			 		   <p>В феврале 2006 года ледовый спорткомплекс ЦСКА расширился. Был построен еще один тренировочный каток, расположенный в отдельном соседнем здании. Здесь ледовая площадка традиционных размеров (61х30 метров). Кроме того, имеются два тренировочных зала – хореографии и общефизической подготовки. Средняя дневная посещаемость тренировочного катка – 600 человек.</p>
+			
+			 		   <p>В середине 2006 года по периметру площадки игрового поля ледовой арены были установлены ударопоглощающие борта, широко распространенные в НХЛ. Благодаря специальной конструкции они способны амортизировать столкновение с хоккеистом, а потому более безопасны при силовой борьбе.</p>
+			 	   </td>
+			 	   <td>
+			 		   <p>Перед началом сезона 2007/2008, в ледовом дворце было заменено звуковое оборудование, благодаря чему все матчи ХК ЦСКА и предваряющие их шоу-программы имеют звуковое сопровождение самого высокого качества.</p>
+			 		   <p>Матчи Хоккейного Клуба ЦСКА, проходящие в ледовом спортивном комплексе, предваряет красочная церемония открытия с использованием световых эффектов, лазерного шоу и видеоклипов. Мы приглашаем вас посетить ледовый спортивный комплекс ЦСКА и окунуться в атмосферу армейского спорта.</p>
+			 		   
+			 		   <a href="#" class="btn">Правила поведения</a>
+			 	   </td>
+			    </tr>
+			</table>
+	       
+	       <div class="page-pic__outer page-pic__outer__big-m text-center">
+		       <img src="./img/arena-plan.png" alt="" />
+	       </div>
+       </div>
+       
+	   <div class="path-scheme">
+		  
+	       <div class="container-fluid wrapper">
+	       	 
+				<div class="path-scheme__table">
+				 	<div class="path-scheme__table-col">
+					 	<div class="path-scheme__map" id="path-scheme__map"></div>
+				 	</div>
+				 	<div class="path-scheme__table-col">
+					 	<h3>
+					 	   	   Адрес Арены
+					 	   </h3>
+					 	   <p>
+					 	   	   125167 Москва, Ленинградский проспект, дом 39, стр. 41<br>Ледовый дворец спорта ЦСКА
+					 	   </p>
+					 	   
+					 	   
+					 	   <h3>
+					 	   	   Как добраться
+					 	   </h3>
+					 	   <div class="pull-right">
+					 	  	 <a href="javascript:void(0);" class="btn path-scheme__btn js_show-pathes">Показать на карте</a>
+					 	   </div>
+					 	   
+					 	   <ul class="path-scheme__list">
+					 	   	   <li class="path-scheme__list-item">
+					 	       		<div class="path-scheme__list-item-icon-cont">
+						 	       		@@include('./html_include/icon.html', { "class": "path-scheme__list-item-icon", "width" : "20", "height" : "14", "name" : "icon-metro" })
+					 	       		</div>
+					 	       		м. Аэропорт, м. Динамо
+					 	   	   </li>
+					 	   	   <li class="path-scheme__list-item">
+					 	       		<div class="path-scheme__list-item-icon-cont">
+						 	       		@@include('./html_include/icon.html', { "class": "path-scheme__list-item-icon", "width" : "18", "height" : "18", "name" : "icon-bus" })
+					 	       		</div>
+					 	           	троллейбус № 12; 70; 86
+					 	   	   </li>
+					 	   	   <li class="path-scheme__list-item">
+					 	       		<div class="path-scheme__list-item-icon-cont">
+						 	       		@@include('./html_include/icon.html', { "class": "path-scheme__list-item-icon", "width" : "20", "height" : "14", "name" : "icon-bus_stop" })
+					 	       		</div>
+					 	           	до остановки "ул. Константина Симонова" или "Дворец спорта ЦСКА"		
+					 	   	   </li>
+					 	   </ul>
+				 	</div>	   
+				</div>
+
+	       </div>
+	   </div>
+       
+       <div class="container-fluid wrapper">
+	       <div class="row">
+		       <div class="col-md-3">
+			       <h3 class="h3__top0">
+				       Парковка
+			       </h3>
+			       <p>
+				       В пешей доступности от ледовой арены ЦСКА расположены следующие парковки:
+			       </p>
+		       </div>
+		       <div class="col-md-3">
+			       <b>Парковка легкоатлетического и футбольного манежа ЦСКА (ЛФК ЦСКА)</b>
+			       
+			       <ul class="custom-list">
+				       <li class="custom-list__item">
+					       @@include('./html_include/icon.html', { "class": "custom-list__icon", "width" : "15", "height" : "21", "name" : "icon-map2" })
+						   <a href="javascript:void(0);" class="black js_show-parking" data-id="1">Ленинградский проспект 39 с.41, заезд с Ходынского бульвара</a>
+				       </li>
+				       <li class="custom-list__item">
+					       @@include('./html_include/icon.html', { "class": "custom-list__icon", "width" : "14", "height" : "18", "name" : "icon-rub" })
+						   Первые 3 часа –100 руб<br>
+						   Затем 50 руб/час
+				       </li>
+			       </ul>
+		       </div>
+		       <div class="col-md-3">
+			       <b>Парковка ТЦ Авиапарк</b>
+			       
+			       <ul class="custom-list">
+				       <li class="custom-list__item">
+					       @@include('./html_include/icon.html', { "class": "custom-list__icon", "width" : "15", "height" : "21", "name" : "icon-map2" })
+						   <a href="javascript:void(0);" class="black js_show-parking" data-id="2">Авиаконструктора Микояна, 10</a>
+				       </li>
+				       <li class="custom-list__item">
+					       @@include('./html_include/icon.html', { "class": "custom-list__icon", "width" : "14", "height" : "18", "name" : "icon-rub" })
+						   Бесплатно
+				       </li>
+			       </ul>
+		       </div>
+		       <div class="col-md-3">
+			       <b>Парковка ТЦ Старт</b>
+			       
+			       <ul class="custom-list">
+				       <li class="custom-list__item">
+					       @@include('./html_include/icon.html', { "class": "custom-list__icon", "width" : "15", "height" : "21", "name" : "icon-map2" })
+						   <a href="javascript:void(0);" class="black js_show-parking" data-id="3">Ленинградский проспект 37Б, заезд с Ходынского бульвара</a>
+				       </li>
+				       <li class="custom-list__item">
+					       @@include('./html_include/icon.html', { "class": "custom-list__icon", "width" : "14", "height" : "18", "name" : "icon-rub" })
+						   Бесплатно
+				       </li>
+			       </ul>
+		       </div>
+	       </div>
+       </div>
+    </div>
+    
+   
+    @@include('./html_include/page-footer.html', {"banner":3})
+
+    <script src="https://api-maps.yandex.ru/2.1.47/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    @@include('./html_include/scripts.html')
+    
+    
+</body>
+</html>

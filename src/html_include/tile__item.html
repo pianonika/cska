@@ -1,0 +1,59 @@
+@@if (view === 'photo-album') {
+	<a class="tile__item js_gallery" href="./media/gallery-pic.jpg" title="Описание фото или комментарий">
+}
+@@if (view !== 'photo-album') {
+	<a class="tile__item" href="#">
+}
+	<div class="tile__item-pic-cont">
+		<img src="./media/tile__item-pic.jpg" alt="" class="tile__item-pic" />
+		
+		@@if (view === 'video-list') {
+			<div class="tile__item-desk tile__item-desk__fullheight">
+				@@include('./icon.html', { "class": "tile__item-desk-icon", "width" : "60", "height" : "60", "name" : "icon-play" })
+			</div>
+		}
+		@@if (view === 'photo-album') {
+			<div class="tile__item-desk">
+				<div class="tile__item-desk-main">Интервью с лучшими игроками в сезоне 2015/2016</div>
+			</div>
+		}
+		@@if (view !== 'video-list' && view !== 'photo-album' && view !== 'news-list' ) {
+			<div class="tile__item-desk">
+				<div class="tile__item-desk-main">Интервью с лучшими игроками в сезоне 2015/2016</div>
+				<div class="tile__item-desk-secondary">Источник: Пресслужба ЦСКА</div>
+			</div>
+		}
+		
+	</div>
+	
+	@@if ( view !== 'photo-album') {
+	
+	<div class="tile__item-panel">
+		<div class="tile__item-title">Пресс-служба ХК ЦСКА представляет</div>
+		
+		<div class="tile__item-table">
+			<div class="tile__item-table-col">
+				<div class="tile__item-date">
+					22 декабря, 2016
+				</div>
+			</div>
+			<div class="tile__item-table-col">
+				<div class="tile__item-content">
+					
+					
+					@@if (view === 'video-album') {
+						@@include('./icon.html', { "class": "tile__item-content-icon", "width" : "11", "height" : "10", "name" : "icon-video" }) 25
+					}
+					@@if (view === 'video-list') {
+						@@include('./icon.html', { "class": "tile__item-content-icon", "width" : "11", "height" : "11", "name" : "icon-clock" }) 25:11
+					}
+					@@if (view === 'photo-list') {
+						@@include('./icon.html', { "class": "tile__item-content-icon", "width" : "13", "height" : "11", "name" : "icon-photo" }) 25
+					}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	}
+</a>

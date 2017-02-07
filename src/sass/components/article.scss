@@ -1,0 +1,56 @@
+.article{
+	&__top{
+		margin: 23px 0 -8px 0;
+		line-height: 22px;
+	}
+	&__date, &__views{
+		font-size: 12px;
+		line-height: 14px;
+		color: $fontColor4;
+		font-family: $fontLight;		
+		display: inline-block;
+		vertical-align: top;
+		margin: 5px 30px 0 0;
+		
+		&-icon{
+		    fill: $iconColor7;
+		    display: inline-block;
+		    vertical-align: top;
+		    transition: all 0.4s;
+		}
+		
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__tag{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 30px;
+		line-height: 16px;
+		padding: 2px 10px;
+		border: 1px solid $borderColor11;
+		color: $fontColor1;
+		text-decoration: none;
+		font-size: 10px;
+		text-transform: uppercase;
+		
+		&:last-child{
+		    margin-right: 0;
+		}			
+	}
+	&__src{
+		font-size: 15px;
+		line-height: 20px;
+		color: $fontColor4;
+		margin: -39px 0 56px;
+		font-family: $fontLight;
+		text-align: center;
+		
+		a{
+			text-decoration: none;
+			border-bottom: 1px solid $brandColorRed;
+			color: $fontColor4;
+		}
+	}
+}

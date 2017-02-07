@@ -1,0 +1,46 @@
+.page-pic{
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	
+	
+	&__outer{
+		margin: 15px 0;
+		position: relative;
+		
+		&__big-m{
+			margin: 80px 0;
+		}
+	}
+	
+	&__text{
+		margin: 17px 0 0;
+		font-size: 15px;
+		line-height: 20px;
+		color: $fontColor5;
+		font-family: $fontLight;
+		text-align: center;
+	}
+	&__link{
+		display: block;	
+	}
+	&__zoom{
+		border-radius: 50%;
+		background: rgba(red($bgColor3), green($bgColor3), blue($bgColor3), 0.5);
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		right: 10px;
+		top:10px;
+			
+		&-icon{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			fill:$iconColor5;
+		}
+	}
+}

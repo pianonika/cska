@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('./html_include/head.html', { "title" : "Поиск" })
+</head>
+<body>
+	
+
+    @@include('./html_include/page-header.html')
+        
+    <div class="page__content">
+    
+       <div class="container-fluid wrapper">
+       
+	       <div class="row">
+		       <div class="col-md-12">
+			       
+			       @@include('./html_include/breadcrumbs.html')
+
+				   <h1 class="text-center">турнирные таблицы</h1>
+		       	   
+				   @@include('./html_include/category-tab.html')
+		       	   
+		       	   @@include('./html_include/filter.html', {"align":"center","stage":true,"season":true, "month":false, "year":false, "count": false, "calendar": false})
+		       </div>
+		       <div class="clearfix"></div>
+	       </div>
+
+		   @@include('./html_include/table-commands.html', {"title":"конференция «ЗАПАД»"})	
+		   
+		   @@include('./html_include/table-commands.html', {"title":"конференция «восток»"})	
+		    
+    
+       </div>
+    </div>
+ 
+    @@include('./html_include/page-footer.html', {"banner":3})
+    
+    @@include('./html_include/scripts.html')
+</body>
+</html>

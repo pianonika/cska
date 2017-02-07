@@ -1,0 +1,95 @@
+.main-menu{
+	display: table;
+	width: 100%;
+	
+	&__col{
+		display: table-cell;
+		vertical-align: top;
+		text-align: center;
+		
+		&:hover{
+			.main-menu__link{
+	    		background: $brandColorRed;
+	    		color: $fontColor3;
+	    		transition-delay: 0s;
+	    	}
+		    .main-menu__dropdown{
+			    max-height: 1000px;
+			    transition-delay: 0.3s;
+		    }
+	    }
+	}
+	
+	&__link{
+		color: $brandColorBlue;
+		font-family: $fontBrand;
+		font-size: 15px;
+		padding: 13px 5px 12px;
+		text-decoration: none;
+		display: block;
+	    letter-spacing: 1.2px;
+	    line-height: 27px;
+	    transition: 0.3s all;
+	    transition-delay: 0.3s;
+	    
+	    &-inner{
+		    padding: 2px 10px;
+		    display: inline-block;
+		    vertical-align: top;
+		    line-height: 23px;
+	    	
+		    &__blue{
+			    background: $brandColorBlue;
+			    color: $fontColor3;
+			    margin: 0 5px;
+		    }
+		    &__red{
+			    background: $brandColorRed;
+			    color: $fontColor3;	
+			    margin: 0 5px;	    
+		    }
+	    }
+	}
+	&__dropdown{
+		position: absolute;
+		background: $brandColorRed;
+		text-align: left;
+		z-index: 200;
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.3s all;
+		
+		&-inner{
+			padding: 15px;
+		}
+		
+		&-col{
+			float: left;
+			margin-left: 50px;
+			
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+		&-link{
+			font-family: $fontBold;
+			color: $fontColor3;
+			font-size: 14px;
+			line-height: 24px;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		&-item:not(:last-child){
+			margin-bottom: 6px;
+			line-height: 24px;
+		}
+	}
+}
+
+.black{
+	.main-menu{
+		&__link{
+			color: $fontColor3;
+		}
+	}
+}

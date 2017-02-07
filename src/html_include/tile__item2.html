@@ -1,0 +1,78 @@
+@@if (view === 'single') {
+	<div class="tile__item tile2__item">
+	
+		<a class="tile__item-pic-cont" href="#">
+			<img src="./media/tile__item-pic2.jpg" alt="" class="tile__item-pic" />	
+		</a>
+		
+		<div class="tile__item-panel tile2__item-panel">	
+			
+			<a class="tile2__item-tag" href="#">новости клуба</a>
+			
+			<a class="tile2__item-title" href="#">Устоит ли Метсола перед лидером?</a>
+			
+			<div class="tile__item-date-outer">
+				<div class="tile__item-date tile__item-date__absolute">
+					@@include('./icon.html', { "class": "tile__item-content-icon", "width" : "11", "height" : "11", "name" : "icon-clock" }) 22 декабря 2016, 20:12
+				</div>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+}
+
+@@if (view === 'double') {
+	<div class="tile__item tile2__item">
+		
+		<div class="tile2__item-table">
+			<div class="tile2__item-table-col">
+				<div class="tile__item-panel tile2__item-panel">	
+					<a class="tile2__item-tag" href="#">новости клуба</a>
+					
+					<a class="tile2__item-title" href="#">Устоит ли Метсола перед лидером?</a>
+					
+					<div class="tile__item-date-outer">
+						<div class="tile__item-date tile__item-date__absolute">
+							@@include('./icon.html', { "class": "tile__item-content-icon", "width" : "11", "height" : "11", "name" : "icon-clock" }) 22 декабря 2016, 20:12
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tile2__item-table-col">
+				<a class="tile__item-pic-cont" href="#">
+					<img src="./media/tile__item-pic2__big.jpg" alt="" class="tile__item-pic" />	
+				</a>
+			</div>
+		</div>
+	</div>
+}
+
+@@if (view === 'main') {
+	<div class="tile__item tile2__item tile2__item__bg-blue">
+		
+		<div class="tile2__item-table">
+			<div class="tile2__item-table-col">
+				<div class="tile__item-panel tile2__item-panel">	
+					<a class="tile2__item-tag tile2__item-tag__white" href="#">новости клуба</a>
+					
+					<a class="tile2__item-title tile2__item-title__big" href="#">Устоит ли Метсола перед лидером?</a>
+					
+					<a href="#" class="btn btn__red">Подробнее&nbsp;<div class="icon-arr"></div></a>
+					
+					<div class="tile__item-date-outer">
+						<div class="tile__item-date tile__item-date__white tile__item-date__absolute">
+							@@include('./icon.html', { "class": "tile__item-content-icon tile__item-content-icon__white", "width" : "11", "height" : "11", "name" : "icon-clock" }) 22 декабря 2016, 20:12
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tile2__item-table-col">
+				<a class="tile__item-pic-cont" href="#">
+					<img src="./media/tile__item-pic2__main.jpg" alt="" class="tile__item-pic" />	
+				</a>
+			</div>
+		</div>
+	</div>
+}

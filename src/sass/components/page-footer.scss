@@ -1,0 +1,68 @@
+.page-footer{
+	&__top{
+	    padding: 31px 30px 31px;
+	    background: $bgColor;
+	    
+	    &__padding2{
+		   padding: 33px 50px 38px; 
+	    }
+	    
+	    & + & {
+		   border-top: 1px solid $borderColor4; 
+	    }
+	}
+	&__bottom{
+		background: $bgColor6;
+		padding-bottom: 44px;
+
+		&-line{
+			background: $bgColor;
+			opacity: 0.1;
+			height: 1px;
+			margin: 0 -31px 20px;
+		}
+		
+		&-inner{
+			background: $brandColorBlue;
+			padding: 2px 31px 31px;
+		}
+	}
+	&__block{
+		float: left;
+		font-size: 12px;
+		line-height: 20px;
+		color: $fontColor6;
+		margin-right: 68px;
+		text-decoration: none;
+	}
+	&__developer{
+		float: right;
+		margin-right: 0;
+		
+		&-logo{
+			display: inline-block;
+			vertical-align: top;
+			margin: 2px 7px 0 0;
+			width: 11px;
+			height: 13px;
+		}
+	}
+	
+	&__social{
+		&-link{
+			margin-right: 20px;
+			text-decoration: none;
+		}
+		&-icon{
+			fill:$iconColor6;
+		}
+	}
+}
+
+.black{
+	.page-footer{
+		&__bottom{
+			background: transparent;
+		}
+	}
+}

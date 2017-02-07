@@ -1,0 +1,74 @@
+<div class="filter__outer">
+	<div class="filter__center">
+		
+		<form action="" class="filter">
+		@@if ( season === true ) {
+			<div class="filter__item">
+				<span class="filter__item-name">сезон</span>&nbsp;
+				<select name="season" class="filter__item-select">
+					<option value="2014—2015">2016—2017</option>
+					<option value="2015—2016">2016—2017</option>
+					<option value="2016—2017">2016—2017</option>
+				</select>
+			</div>
+		}
+		@@if ( stage === true ) {
+			<div class="filter__item">
+				<span class="filter__item-name">этап</span>&nbsp;
+				<select name="season" class="filter__item-select">
+					<option value="">Регулярный чемпионат</option>
+					<option value="">Матч звезд</option>
+				</select>
+			</div>
+		}
+		
+		@@if ( month === true ) {
+			<div class="filter__item">
+				<select name="season" class="filter__item-select">
+					<option value="">Январь</option>
+					<option value="">Февраль</option>
+					<option value="">Март</option>
+					<option value="">Апрель</option>
+					<option value="">Май</option>
+					<option value="">Июнь</option>
+					<option value="">Июль</option>
+					<option value="">Август</option>
+					<option value="">Сентябрь</option>
+					<option value="">Октябрь</option>
+					<option value="">Ноябрь</option>
+					<option value="">Декабрь</option>
+				</select>
+			</div>
+		}
+		@@if ( year === true ) {
+			<div class="filter__item">
+				<select name="season" class="filter__item-select">
+					<option value="">2017</option>
+					<option value="">2016</option>
+					<option value="">2015</option>
+				</select>
+			</div>
+		}
+		@@if ( count === true ) {
+			<div class="filter__item">
+				<span class="filter__item-name">Количество строк:</span>&nbsp;
+				
+				<a href="#" class="filter__item-link">5</a>
+				<a href="#" class="filter__item-link filter__item-link__active">10</a>
+				<a href="#" class="filter__item-link">20</a>
+				<a href="#" class="filter__item-link">50</a>
+				
+			</div>
+		}
+		
+		@@if ( calendar === true ) {
+			<div class="filter__item">
+				<input type="hidden" id="date" value="10/12/2012"/>
+				<a href="javascript:void(0);" class="filter__item-link filter__item-link__black js_datepicker">Календарь&nbsp;@@include('./icon.html', { "class": "filter__item-link-icon", "width" : "14", "height" : "14", "name" : "icon-calendar" })</a>
+			</div>
+		}
+		
+		</form>
+	
+	</div>
+</div>

@@ -1,0 +1,22 @@
+.page404{
+	padding: 50px 0;
+	
+	&__outer{
+		height: calc( 100vh - 208px);
+		min-height: 452px;
+	}
+	
+	&__font1{
+		font-size: 215px;
+		line-height: 215px;
+		color: $fontColor3;
+		font-family: $fontBrand;
+	}
+	&__font2{
+		font-size: 58px;
+		line-height: 58px;
+		color: $fontColor3;
+		font-family: $fontBrand;
+		margin-bottom: 37px;
+	}
+}

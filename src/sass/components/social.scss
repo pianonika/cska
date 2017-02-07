@@ -1,0 +1,12 @@
+.social{
+	&__link{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 20px;
+		text-decoration: none;
+		
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

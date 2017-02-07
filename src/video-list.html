@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('./html_include/head.html', { "title" : "Поиск" })
+</head>
+<body>
+	
+    
+    @@include('./html_include/page-header.html')
+    
+    
+    <div class="page__content">
+    
+       <div class="container-fluid wrapper">
+       
+	       <div class="row">
+		       <div class="col-md-12">
+			       
+			       @@include('./html_include/breadcrumbs.html')
+
+				   <h1 class="text-center">ПОСЛЕМАТЧЕВЫЕ ПРЕСС-КОНФЕРЕНЦИИ</h1>
+		       		
+		       	  @@include('./html_include/date-tab.html')
+		       	   	
+		       </div>
+		       <div class="clearfix"></div>
+	       </div>
+
+	       <div class="tile">
+		       <div class="row">
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="clearfix"></div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="clearfix"></div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "video-list" })	
+			       </div>
+			       <div class="clearfix"></div>
+		       </div>
+	       </div>
+	       
+	       @@include('./html_include/pagenav.html', { "back" : "yes", "rss": "no" })	
+
+	       
+       </div>
+    </div>
+ 
+    @@include('./html_include/page-footer.html', {"banner":3})
+    
+    @@include('./html_include/scripts.html')
+</body>
+</html>

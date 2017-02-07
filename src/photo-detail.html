@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('./html_include/head.html', { "title" : "Поиск" })
+</head>
+<body>
+	
+	<!--
+    <div style="width:1280px;height:6850px;background:url('./img/v.png');position:absolute;left:0;right:0;margin:auto;z-index:100;opacity:0.5;top: 0;"></div>
+    -->
+    
+    @@include('./html_include/page-header.html')
+    
+    
+    <div class="page__content">
+    
+       <div class="container-fluid wrapper">
+       
+	       <div class="row">
+		       <div class="col-md-12">
+		       
+				   @@include('./html_include/breadcrumbs.html')
+		       </div>
+			   <div class="col-md-8 col-md-offset-2">
+			       <div class="article">
+				       
+				       <div class="article__date">@@include('./html_include/icon.html', { "class": "tile__item-content-icon", "width" : "11", "height" : "11", "name" : "icon-clock" }) 22 декабря, 11:30</div>
+				       
+				       <h1 class="text-center">Презентация нового фирменного стиля ХК ЦСКА</h1>
+				       
+				       <div class="article__src">Источник: <a href="#">Пресс-Служба ЦСКА</a></div>
+				       
+			       </div>
+
+		       		
+		       </div>
+		       <div class="clearfix"></div>
+	       </div>
+	       
+	       <div class="tile">
+		       <div class="row">
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="clearfix"></div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="clearfix"></div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="col-md-3">
+			       		@@include('./html_include/tile__item.html', { "view" : "photo-album" })	
+			       </div>
+			       <div class="clearfix"></div>
+		       </div>
+	       </div>
+		   
+		   <div class="hidden" id="share-container">
+			   @@include('./html_include/share.html', {"short": true, "back": false })	
+		   </div>
+		   
+		   @@include('./html_include/pagenav.html', { "back" : "yes", "rss": "no" })	
+
+       </div>
+    </div>
+ 
+    @@include('./html_include/page-footer.html', {"banner":3})
+    
+    @@include('./html_include/scripts.html')
+</body>
+</html>

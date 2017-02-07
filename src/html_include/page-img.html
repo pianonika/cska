@@ -1,0 +1,28 @@
+<div class="page-pic__outer">
+	
+	@@if (zoom === true ) {
+	<div class="page-pic__zoom">
+		@@include('icon.html', { "class": "page-pic__zoom-icon", "width" : "16", "height" : "16", "name" : "icon-zoom" })
+	</div>
+	}
+	
+	@@if (zoom === true ) {
+		<a class="page-pic__link js_fullscreen" href="./media/gallery-pic.jpg" title="Описание фото или комментарий">
+	}
+	
+	<img src="./media/page-pic.jpg" alt="" class="page-pic" />
+	
+	@@if (zoom === true ) {
+		</a>
+	}
+	
+	@@if (comment !== false) {
+		<div class="page-pic__text">@@comment</div>
+	}
+	
+	@@if (zoom === true ) {
+		<div class="hidden" id="share-container">
+			   @@include('share.html', {"short": true, "back": false })	
+		</div>
+    }
+</div>

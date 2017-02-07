@@ -1,0 +1,31 @@
+.footer-menu{
+	display: table;
+	width: 100%;
+	margin: 24px 0 23px 0;
+	table-layout: fixed;
+	
+	&__col{
+		display: table-cell;
+		vertical-align: top;
+		text-align: center;
+		
+		&:first-child{
+			width: 56px;
+			padding-right: 50px;
+		}
+		&:last-child{
+			width: 135px;
+			white-space: nowrap;
+			padding-left: 20px;	
+		}
+	}
+	
+	&__link{
+		color: $fontColor3;
+		font-size: 15px;
+		line-height: 20px;
+		font-family: $fontBrand;
+		letter-spacing: 1.5px;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('./html_include/head.html', { "title" : "Поиск" })
+</head>
+<body>
+
+    @@include('./html_include/page-header.html')
+    
+    
+    <div class="page__content">
+    
+       <div class="container-fluid wrapper">
+       
+	       <div class="row">
+		       <div class="col-md-12">
+			      
+				   <h1 class="text-center">Новости</h1>
+		       		
+				   @@include('./html_include/news-tab.html')
+		       	   
+		       	   @@include('./html_include/filter.html', {"align":"center","stage":false,"season":false, "month":false, "year":false, "count": false, "calendar": true })
+		       	   		
+		       </div>
+		       <div class="clearfix"></div>
+	       </div>
+		   <div class="row">
+		       <div class="col-md-8 col-md-offset-2 text-center">
+				 	<h2>Новостей, подходящих под критерии поиска не&nbsp;найдено!</h2>  
+				 	<p>
+					 	Попробуйте выбрать другую дату или категорию.
+				 	</p>
+		       </div>
+		   </div>
+	       
+       </div>
+    </div>
+ 
+    @@include('./html_include/page-footer.html', {"banner":3})
+    
+    @@include('./html_include/scripts.html')
+</body>
+</html>

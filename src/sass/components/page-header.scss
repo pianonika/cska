@@ -1,0 +1,227 @@
+.page-header{
+
+	&__table{
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
+		height: 107px;
+		
+		&-col{
+			display: table-cell;
+			vertical-align: top;
+			border: 1px solid $borderColor;
+			border-top: none;
+			
+			
+			&:first-child{
+				width: 117px;
+				vertical-align: middle;
+			}	
+		}
+	}
+	&__top{
+		border-bottom: 1px solid $borderColor;
+		height: 54px;
+		position: relative;
+		    
+		&-bl{
+		    float: right;
+		    padding: 22px 20px 20px;
+		    line-height: 12px;
+		    height: 100%;
+		    box-sizing: border-box;
+			border-left: 1px solid $borderColor;       
+			
+			&:first-child{
+				float:left;
+				border-left: none;
+			}
+		}
+	}
+	&__link{
+		color: $fontColor2;
+		font-size: 11px;
+		line-height: 12px;
+		text-decoration: none;
+		letter-spacing: 0.3px;
+		display: block;
+		
+		    
+		&-inner{
+			max-width: 165px;
+		    display: inline-block;
+		    vertical-align: top;
+		}
+		
+		&-pic{
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    margin: auto;
+		    display: block;
+			fill: $iconColor3;
+			
+			&__bottom{
+				top:auto;
+				bottom: -12px;
+			}
+			
+			&-cont{
+				position: relative;
+				padding-left: 45px;	
+				margin-top: -4px;
+				    
+				&__small{
+					padding-left: 25px;
+				}
+			}
+		}
+	}
+	&__logo{
+		display: block;
+		margin: 0 auto;
+		width: 75px;
+		height: 75px;
+		
+		&-cont{
+			display: block;
+		}
+	}
+	&__search{
+		padding: 20px 20px 22px;
+		
+		&-icon{
+			fill: $iconColor;
+		}
+		
+		&-form{
+			position: absolute;
+		    left: -1px;
+		    right: -1px;
+		    background: #fff;
+		    border-left: 1px solid #e1e6ef;
+		    border-right: 1px solid #e1e6ef;
+		    border-bottom: 1px solid #e1e6ef;
+		    z-index: 100;
+		    top:-55px;
+		    transition: 0.2s all;
+		    
+		    &.visible{
+			    top:0;
+		    }
+		    
+		    &-input{
+			    padding: 10px 20px;
+			    line-height: 34px;
+			    border:none;
+			    display: block;
+			    width: calc( 100% - 110px );
+			    float: left;
+			    box-sizing: border-box;
+				color: $fontColor1;
+				font-size: 14px;
+				text-transform: uppercase;
+				outline: 0 !important;
+		    }
+		    &-submit{
+				width: 55px;
+			    background: $brandColorRed;
+			    border: none;
+			    height: 54px;
+			    text-indent: -9999px;  
+			    position: relative;
+			    display: block;
+			    float: left;
+			    
+			    &-icon{
+					position: absolute;
+					left: 0;
+					right: 0;
+					top:0;
+					bottom: 0;
+					margin: auto;
+					fill:$iconColor5;    
+			    }
+		    }
+		    &-close{
+				width: 55px;
+			    background: $brandColorBlue;
+			    border: none;
+			    height: 54px;
+			    text-indent: -9999px;  
+			    position: relative;
+			    display: block;
+			    float: left;
+			    
+			    &:before,&:after{
+				    width: 20px;
+				    height: 2px;
+				    background: $iconColor5;
+				    position: absolute;
+				    left: 0;
+				    right: 0;
+				    top:0;
+				    bottom: 0;
+				    margin: auto;
+				    content: '';
+			    }
+			    
+			    &:before{
+					transform: rotate(45deg);    
+			    }
+			    &:after{
+			    	transform: rotate(-45deg);  
+			    }
+		    }
+		}
+	}
+	&__social{	
+		padding: 20px 20px 22px;
+		
+		&-icon{
+			fill:$iconColor2;
+		}
+	}
+
+}
+
+.black{
+	.page-header{
+		&__table{
+			&-col{
+				border-color: rgba(red($borderColor), green($borderColor), blue($borderColor), 0.13);
+			}
+		}
+		&__top{
+			border-color: rgba(red($borderColor), green($borderColor), blue($borderColor), 0.13);
+			
+			&-bl{
+				border-color: rgba(red($borderColor), green($borderColor), blue($borderColor), 0.13);
+			}
+		}
+		&__link{
+			color: $fontColor17;
+
+			&-pic{
+				fill: $iconColor5;
+			}
+		}
+		&__search{
+			&-icon{
+				fill: $iconColor13;
+			}
+			
+			&-form{
+				border-left: 1px solid rgba(red($borderColor), green($borderColor), blue($borderColor), 0.13);
+				border-right: 1px solid rgba(red($borderColor), green($borderColor), blue($borderColor), 0.13);
+				border-bottom: 1px solid rgba(red($borderColor), green($borderColor), blue($borderColor), 0.13);
+				background: transparent;
+			}
+		}
+		&__social{	
+			&-icon{
+				fill:$iconColor13;
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.tabs{
+	display: table;
+	
+	&__outer{
+		text-align: center;
+		margin: 40px 0 67px;
+		
+		& + .filter__outer{
+			margin-top: -37px;
+		}
+	}	
+	&__center{
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__item{
+		display: table-cell;
+		vertical-align: top;
+		padding: 0 35px 9px 0;
+		border-bottom: 1px solid $borderColor6;
+		
+		&:last-child{
+			padding-right: 0;
+		}	
+	}	
+	&__link{
+		color: $fontColor11;
+		font-size: 12px;
+		line-height: 20px;
+		font-family: $fontBlack;
+		text-transform: uppercase;
+	    letter-spacing: 0.25px;
+	    text-decoration: none;
+	    padding: 0 6px;
+		    
+		&__active{
+			color: $fontColor1;
+			position: relative;
+			
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: -18px;
+				background: $brandColorRed;
+				height: 4px;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+}
+
+.blue{
+	.tabs{
+		&__item{
+			border-bottom: 1px solid rgba(red($borderColor), green($borderColor), blue($borderColor), 0.13);
+		}
+		&__link{
+			color: $fontColor18;
+			    
+			&__active{
+				color: $fontColor3;
+			}
+		}
+	}
+}

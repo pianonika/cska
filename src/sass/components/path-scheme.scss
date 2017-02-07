@@ -1,0 +1,95 @@
+.path-scheme{
+	background: $bgColor;
+	position: relative;
+	margin:  0 0 70px 0;
+	&__map{
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		width: calc( 50vw - 15px);
+	}
+	&__table{
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		
+		&-col{
+			padding: 80px 15px;
+			display: table-cell;
+			vertical-align: top;
+			
+			&:first-child{
+				padding-left: 0;
+			}		
+			&:last-child{
+				padding-right: 0;
+			}
+			
+			& > *:first-child{
+				margin-top: 0;
+			}
+			& > *:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__btn{
+		margin-top: -60px;
+	}
+	
+	&__list{
+		&-item{
+			position: relative;
+			padding-left: 46px;
+			background: none;
+			line-height: 28px;
+			margin-bottom: 22px;
+			
+			&:before{
+				position: absolute;
+				left: 17px;
+				top:0;
+				bottom: -19px;
+				border-left: 1px dotted $borderColor12;
+				content: '';
+			}
+			&:first-child{
+				&:before{
+					top:32px;
+				}
+			}
+			&:last-child{
+				margin-bottom: 0;	
+				bottom: auto;
+				
+				&:before{
+					content: none;
+				}
+			}
+			
+			&-icon{
+				fill:$iconColor14;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top:0;
+				bottom: 0;
+				margin: auto;
+				
+				&-cont{
+					border: 2px solid $borderColor12;
+					width: 34px;
+					height: 34px;
+					box-sizing: border-box;
+					position: absolute;
+					top:-3px;
+					left: 0;
+					border-radius: 50%;
+					background: $bgColor;
+					z-index: 100;
+				}
+			}
+		}
+	}
+}

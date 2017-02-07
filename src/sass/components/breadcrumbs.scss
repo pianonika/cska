@@ -1,0 +1,13 @@
+.breadcrumbs{
+	color: $fontColor4;
+	font-size: 12px;
+	line-height: 20px;	
+	margin-bottom: 20px;
+		
+	&__link{
+		color: $fontColor4;
+		font-size: 12px;
+		line-height: 20px;	
+		text-decoration: none;
+	}
+}

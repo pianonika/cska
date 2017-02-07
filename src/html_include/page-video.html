@@ -1,0 +1,17 @@
+<div class="page-video__outer">
+	@@if (src === 'site') {
+		<video class="page-video">
+		    <source src="./media/video/video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+		    <source src="./media/video/video.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">	
+		    <source src="./media/video/video.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">			
+		</video>
+	}
+	@@if (src === 'yt') {
+		<iframe class="page-video" src="https://www.youtube.com/embed/LereE08PwQc" frameborder="0" allowfullscreen></iframe>
+	}
+	
+	@@if (comment !== false) {
+		<div class="page-video__text">@@comment</div>
+	}
+	
+</div>
